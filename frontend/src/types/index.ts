@@ -29,3 +29,13 @@ export interface Preset {
   particleCount: number;
   initialConfig: 'dam' | 'drop' | 'fountain' | 'wave';
 }
+
+export interface ParamSummary {
+  paramName: keyof SimParams;
+  beforeValue: number;
+  afterValue: number;
+  beforeDensity: number;
+  afterDensity: number;
+  beforeVelocity: number;
+  afterVelocity: number;
+}
